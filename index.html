@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="style1.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    //hide login and singn up
+    $(".main1").hide();
+    $(".main2").hide();
+
+
+   
+
+    //home
+   
+    
+
+
+    //login 
+    $("#login").click(function(){
+    $(".main1").hide();
+    $(".main2").show();
+    $(".home").hide();
+    });
+
+
+    //singup
+    $("#signup").click(function(){
+    $(".main2").hide();
+    $(".main1").show();
+    $(".home").hide();
+
+    });
+
+    $("#hom").click(function(){
+        $(".home").show();
+        $(".main1").hide();
+        $(".main2").hide();
+
+
+    });
+
+    $(".c1").scroll(function(){
+   
+    $("#pp").fadeOut();
+    
+  });
+
+ 
+});
+</script>
+
+
+</head>
+<body>
+    <!-----------------------start menu---------------------->
+    <div class="menu">
+        <h1>Logo</h1>
+
+        <ul>
+            <li id="hom"><a href="#home">Home</a></li>
+            <li id="login"><a href="#log">Login</a></li>
+            <li id="signup"><a href="#sing">signup</a></li>
+        </ul>
+    </div>
+    <!----------------------end menu ------------------------>
+
+   
+
+   <div class="main1" id="#sing">
+
+        <div class="sub1">
+            <div class="user">
+                <ion-icon name="person" class="user1"></ion-icon>
+            </div>
+            <h1>create</h1>
+            <form action="signup.php" method="post">
+                <input type="text" name="username" placeholder="Username">
+                <input type="text" name="Password" placeholder="Password">
+                <input type="text" name="rePassword" placeholder="Re-Password">
+                <input type="submit" value="Signup" class="login" name="signup" id="bt">
+            </form>
+
+            
+
+            <div class="links">
+                <a href="#"><img src="./images/apple.png" alt="" ></a>
+                <a href="#"><img src="./images/facebook1.png" alt="" ></a>
+                <a href="#"><img src="./images/google.png" alt="" ></a>
+            </div>
+        </div>
+       
+        </div>
+
+        
+   </div>
+
+
+   <div class="main2" id="#log">
+
+        <div class="sub1">
+            <div class="user">
+                <ion-icon name="person" class="user1"></ion-icon>
+            </div>
+            <h1>LOGIN</h1>
+            <form action="login.php" method="post">
+                <input type="text" name="username" placeholder="Username">
+                <input type="text" name="Password" placeholder="Password">
+                <input type="submit" value="login" class="login" name="login" id="bt">
+            </form>
+
+            <div class="forget">
+                <a href="#">Forget Password?</a>
+            </div>
+
+            <div class="links">
+                <a href="#"><img src="./images/apple.png" alt="" ></a>
+                <a href="#"><img src="./images/facebook1.png" alt="" ></a>
+                <a href="#"><img src="./images/google.png" alt="" ></a>
+            </div>
+
+        </div>
+
+   </div>
+
+
+    <!-----------------------start home---------------------->
+    <hr>
+
+    <div class="home" id="home">
+
+    <div class="text">
+        <h1> Web <span>Development</span></h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati id ad vero suscipit quia omnis ipsa, provident dicta aspernatur odio perferendis consequatur numquam qui animi nulla fugiat fugit rem a.</p>
+        <a href="#"> learn more</a>
+    </div>
+
+    <img src="./images/img1.png" alt="" >
+
+
+    </div>
+    <!-----------------------end home---------------------->
+
+
+    <div class="content">
+        <div class="c1" data-aos="fade-right">
+            <p id="pp"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae veritatis, et hic expedita nihil nulla pariatur at quidem labore velit vel sunt voluptas maxime laborum placeat assumenda totam incidunt unde.</p>
+
+        </div>
+
+        <div class="c2" data-aos="fade-left">
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed fuga quasi similique at quia vero quas. Perferendis recusandae harum perspiciatis facilis in ex laboriosam dolore quod, vero, consectetur, deserunt totam. </p>
+
+        </div>
+
+        <div class="c3" data-aos="fade-right">
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure repellat, deserunt totam voluptates ab vero veniam. Aliquam quidem veritatis, ipsam numquam officia iste ut fugit maiores impedit voluptates, assumenda fugiat. </p>
+
+        </div>
+
+        <div class="c4" data-aos="fade-left">
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus asperiores libero quam ut nam veniam necessitatibus beatae perferendis, voluptate, hic aliquid quae explicabo sequi dolores tenetur quo. Quam, iusto fuga? </p>
+        </div>
+    </div>
+   
+
+
+  
+
+
+
+<!------aos------------------------------>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+     AOS.init();
+    </script>
+    
+</body>
+</html>
